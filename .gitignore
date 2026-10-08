@@ -1,0 +1,14 @@
+build/
+install/
+log/
+src/rtabmap/
+src/rtabmap_ros/
+*.pt
+*.pth
+*.npy
+**/__pycache__/
+*.pyc
+training/runs/
+training/predictions_preview/
+training/diagnose_preview/
+.vscode/
