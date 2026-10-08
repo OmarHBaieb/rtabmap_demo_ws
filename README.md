@@ -29,11 +29,9 @@ Les étiquettes Gazebo sont générées géométriquement (reprojection de la pr
 Prérequis : Ubuntu 22.04, ROS 2 Humble, Gazebo Classic, paquets TurtleBot3, PyTorch avec CUDA.
 
 ```bash
-mkdir -p ~/rtabmap_demo_ws/src && cd ~/rtabmap_demo_ws/src
-git clone https://github.com/OmarHBaieb/rtabmap_demo_ws.git .
-git clone https://github.com/introlab/rtabmap.git
-git clone -b ros2 https://github.com/introlab/rtabmap_ros.git
-cd .. && colcon build --symlink-install
+git clone --recurse-submodules https://github.com/OmarHBaieb/rtabmap_demo_ws.git ~/rtabmap_demo_ws
+cd ~/rtabmap_demo_ws
+colcon build --symlink-install
 source install/setup.bash
 ```
 

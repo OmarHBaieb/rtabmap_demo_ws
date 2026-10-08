@@ -1,8 +1,6 @@
 build/
 install/
 log/
-src/rtabmap/
-src/rtabmap_ros/
 *.pt
 *.pth
 *.npy
